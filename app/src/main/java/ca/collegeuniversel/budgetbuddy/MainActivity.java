@@ -1,4 +1,4 @@
-package ca.collegeuniversel.budgetbuddy;
+ package ca.collegeuniversel.budgetbuddy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
