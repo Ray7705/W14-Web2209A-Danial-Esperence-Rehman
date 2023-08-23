@@ -1,4 +1,4 @@
-package ca.collegeuniversel.budgetbuddy.viewModel;
+package ca.collegeuniversel.budgetbuddy.view;
 
 import android.content.Context;
 import android.util.AttributeSet;

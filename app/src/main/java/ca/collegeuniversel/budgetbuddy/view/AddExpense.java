@@ -9,7 +9,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import ca.collegeuniversel.budgetbuddy.viewModel.ExpenseManager;
 import ca.collegeuniversel.budgetbuddy.R;
 
 public class AddExpense extends AppCompatActivity {
