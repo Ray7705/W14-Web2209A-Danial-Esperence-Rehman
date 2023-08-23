@@ -1,4 +1,4 @@
-package ca.collegeuniversel.budgetbuddy;
+package ca.collegeuniversel.budgetbuddy.view;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,10 +9,13 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import ca.collegeuniversel.budgetbuddy.viewModel.ExpenseManager;
+import ca.collegeuniversel.budgetbuddy.R;
+
 public class AddExpense extends AppCompatActivity {
     private EditText Title, Amount;
     private Button add,cancel;
-    private Spinner CategorySpinner;
+    private Spinner spinner_category;
     private ExpenseManager expenseManager;
 
     @Override
@@ -20,11 +23,11 @@ public class AddExpense extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_expense);
 
-        EditText Title = findViewById(R.id.editTextTitle);
-        EditText Amount = findViewById(R.id.editTextAmount);
-        Spinner CategorySpinner = findViewById(R.id.categorySpinner);
-        Button add = findViewById(R.id.add);
-        Button cancel= findViewById(R.id.cancel);
+        EditText Title = findViewById(R.id.edit_Text_title);
+        EditText Amount = findViewById(R.id.edit_Text_amount);
+        Spinner spinner_category = findViewById(R.id.spinner_category);
+        Button add = findViewById(R.id.button_add);
+        Button cancel= findViewById(R.id.button_cancel);
 
         expenseManager = new ExpenseManager(this);
 
@@ -33,7 +36,7 @@ public class AddExpense extends AppCompatActivity {
             public void onClick(View v) {
                 String title = Title.getText().toString();
                 double amount = Double.parseDouble(Amount.getText().toString());
-                String selectedCategory = CategorySpinner.getSelectedItem().toString();toString();
+                String selectedCategory = spinner_category .getSelectedItem().toString();toString();
 
                 // Create a new Expense object
 
